@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>time clock using pure js</title>
+</head>
+<style>
+#clock container{
+	position:relaive;
+	margin:auto;height:4ovw;
+	width:40vw;
+	background:url(clockimage.png) no-repeate;
+	background-size:100%;
+
+}
+#hour, #mintue,#second{
+	position:absolute;
+	background:block;
+	border-radius:10px;
+	transform-orgion:bottom;
+}
+# hour{
+	width:1.8%;
+	height:25%;
+	left:48 8%;
+}
+# minute{
+	width:1.6%;
+	height:30%;
+	top:19%;
+	left:48 9%;
+	opacity:0.8;
+}
+# second{
+	width:1%;
+	height:40%;
+	top:9%;
+	left:49 25%;
+	opacity:0.8;
+}
+
+<body>
+	<div id="clockcontainer">
+		<div id="hour">
+			<div id="minute">
+
+			</div>
+		</div>
+	</div>
+	<script>
+		setinterval(()=>{
+			d= new Date();
+			htime=d.gethours();
+			mtime=d.getmintues();
+			stime=d.getseconds();
+			hrotation=30*htime+mtime/2;
+			mrotation=6*mtime;
+			srotation=6*stime;
+			hour.style.transform='rotate(${hrotation}deg)';
+			mintue.style.transform='rotate(${mrotation}deg)';
+			second.style.transform='rotate(rotate(${srotation}deg)';
+
+		},1000);
+	</script>
+	
+</body>
+</html>

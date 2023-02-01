@@ -1,0 +1,17 @@
+let age=prompt("Enter the age")
+age=Num.parsint(age)
+const can drive=(age)=>{
+    return age=>=18?true:false
+
+}
+if(can drive (age)=>{
+    alert("you can drive")
+}
+else{
+    alert("you can not drive" )
+}
+let num=prompt("enter your Number")
+number=Numberpaseint(number)
+if(number >4){
+    location:http://goggle.com
+}
